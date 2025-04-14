@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUFFALO HAMBURGUERIA - Cardápio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo da Hamburgueria" class="logo">
+        <h1>BUFFALO HAMBURGUERIA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Localização</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cardapio">
+        <h2>Nosso Cardápio</h2>
+
+        <!-- Card 1: Gigante -->
+        <div class="card">
+            <div class="card-img" onclick="toggleIngredientes('gigante')">
+                <img src="img/Buffalogigante.png" alt="Hamburguer Gigante">
+            </div>
+            <div class="card-info">
+                <h3>Gigante</h3>
+                <p class="preco">R$ 25,90</p>
+                <div id="gigante" class="ingredientes" style="display: none;">
+                    <p>Pão brioche</p>
+                    <p>Carne Angus</p>
+                    <p>Bacon crocante</p>
+                    <p>Queijo Cheddar</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Duplo -->
+        <div class="card">
+            <div class="card-img" onclick="toggleIngredientes('duplo')">
+                <img src="img/Buffaloduplo.png" alt="Hamburguer Duplo">
+            </div>
+            <div class="card-info">
+                <h3>Duplo</h3>
+                <p class="preco">R$ 28,90</p>
+                <div id="duplo" class="ingredientes" style="display: none;">
+                    <p>Pão de brioche</p>
+                    <p>Dupla carne de boi</p>
+                    <p>Queijo Cheddar</p>
+                    <p>Bacon e molho especial</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Supremo -->
+        <div class="card">
+            <div class="card-img" onclick="toggleIngredientes('supremo')">
+                <img src="img/Buffalosupremo.png" alt="Hamburguer Supremo">
+            </div>
+            <div class="card-info">
+                <h3>Supremo</h3>
+                <p class="preco">R$ 22,50</p>
+                <div id="supremo" class="ingredientes" style="display: none;">
+                    <p>Pão de leite</p>
+                    <p>Carne suculenta</p>
+                    <p>Queijo prato</p>
+                    <p>Molho Supremo</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BUFFALO HAMBURGUERIA | Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar/ocultar ingredientes ao clicar na imagem
+        function toggleIngredientes(hamburguer) {
+            const ingredientes = document.getElementById(hamburguer);
+            if (ingredientes.style.display === "none") {
+                ingredientes.style.display = "block";
+            } else {
+                ingredientes.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

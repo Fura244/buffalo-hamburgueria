@@ -1,0 +1,242 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffc107; /* amarelo mostarda */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    width: 60px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Cardápio */
+.cardapio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffc107;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 350px;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card-img img:hover {
+    transform: scale(1.05);
+}
+
+.card-info h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #ffc107;
+}
+
+.preco {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.ingredientes {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    color: #888;
+}
+.sobre-container {
+    background-color: #000;
+    color: #FFD700;
+    padding: 60px 20px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-conteudo {
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #111;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.sobre-conteudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #FFD700;
+}
+/* Adicionando cores, fontes e alinhamento para o Pedidos */
+body.pag-secundaria {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+}
+
+.info-texto {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.opcoes-pedido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.opcao {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.opcao img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.opcao h3 {
+    color: #FFCC00;
+    font-size: 24px;
+}
+
+.opcao p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.botao-pedido {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFCC00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.botao-pedido:hover {
+    background-color: #ff9900;
+}
+/* Estilo para a página de localização */
+body.pag-secundaria {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #FFCC00;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.info-texto {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.mapa {
+    margin-top: 30px;
+}
+
+.mapa h3 {
+    text-align: center;
+    color: #FFCC00;
+    font-size: 24px;
+}
+
+iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+}
